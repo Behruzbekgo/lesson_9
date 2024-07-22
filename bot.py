@@ -26,7 +26,7 @@ async def on_startup(_):
 
 @dp.message_handler(commands=['start'])
 async def send_hi(xabar:types.Message):
-    await xabar.answer(text='Hello!',reply_markup=car_menu)
+    await xabar.answer(text='Hellobek!',reply_markup=car_menu)
 
 @dp.callback_query_handler()
 async def send_reg(call:types.CallbackQuery):
